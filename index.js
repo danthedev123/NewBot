@@ -61,7 +61,7 @@ client.on("ready", () => {
 
     // Put the new c into the API and catch any errors
     try {
-      rest.put(Routes.applicationCommands(""), {
+      rest.put(Routes.applicationCommands("1050285068481986580"), {
         body: c,
       });
     } catch (e) {

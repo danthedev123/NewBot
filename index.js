@@ -5,7 +5,7 @@ const {
   GatewayIntentBits,
   Collection,
 } = require("discord.js");
-const { token } = require("./auth.json");
+const { token, appId } = require("./auth.json");
 const fs = require("fs");
 
 let commandExec = new Collection();
@@ -69,7 +69,7 @@ client.on("ready", () => {
 
     // Put the c into the API and catch any errors
     try {
-      rest.put(Routes.applicationCommands("1050285068481986580"), {
+      rest.put(Routes.applicationCommands(appId), {
         body: c,
       });
     } catch (e) {

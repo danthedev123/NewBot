@@ -7,7 +7,9 @@
     "@discordjs/builders": "^1.4.0",
     "axios": "^1.2.1",
     "discord.js": "^14.7.1",
-    "flight-data": "^2.0.3"
+    "flight-data": "^2.0.3",
+    "mongoose": "^6.8.1",
+    "wikipedia": "^1.2.0"
   },
   "scripts": {
     "start": "node index.js"

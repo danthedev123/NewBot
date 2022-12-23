@@ -20,6 +20,14 @@ client.login(token).then(() => {
   console.log("Login successful");
 });
 
+/* ===== MongoDB Connection ===== */
+
+// const mongoose = require("mongoose");
+
+// mongoose.connect("mongodb+srv://shoshonebot:firewatch@cluster0.yygc0wi.mongodb.net/test").then(() => {
+//   console.log("Connected to MongoDB Atlas");
+// })
+
 client.on("ready", () => {
   // rest.put(Routes.applicationCommands("1050285068481986580"), { body: [] })
   // .then(() => console.log('Successfully deleted all application commands.'))
